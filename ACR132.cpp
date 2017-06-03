@@ -23,8 +23,13 @@ int main (void) {
       cin >> i >> j;
       subCadena = frase.substr(fmin(i,j), (fmax(i,j)-fmin(i,j))+1);
       char primeraLetra = subCadena[0];
-      for(int a=fmax(i,j)-fmin(i,j);a>=0;a--){
-        if (primeraLetra != subCadena[a]) iguales = false;
+      int a = fmax(i,j)-fmin(i,j);
+      while(a>=0){
+        if (primeraLetra != subCadena[a]) {
+          iguales = false;
+          break;
+        }
+        a--;
       }
       if (iguales)
         cout << "SI" << endl;
