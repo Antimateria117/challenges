@@ -10,9 +10,9 @@ public class ACR222 {
       if (b==1)
         System.out.println(p+1);
       else{
-		s = ((1-(int)Math.pow(b,p+1))/(1-b))%1000007;
+	s = ((1-(int)Math.pow(b,p+1))/(1-b))%1000007;
         System.out.println(s);
-	  }
+      }
     }
   }
 }
